@@ -1,11 +1,14 @@
 ---
-title: "English Word lengths"
-author: "Jenny Bryan"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
+title: "English Word Lengths and Frequency"
+author: "Zhenyi Huang"
+date: 23, November, 2018
 output:
   html_document:
     keep_md: yes
 ---
+
+This R markdown file is adapted from Jenny Bryan, and it is further edited by adding additional R scripts and comments. 
+
 
 ```{r load-hist-dat, include = FALSE}
 hist_dat <- read.delim("histogram.tsv")
@@ -20,3 +23,18 @@ The most frequent word length is `r with(hist_dat, Length[which.max(Freq)])`.
 Here is a histogram of word lengths.
 
 ![*Fig. 1* A histogram of English word lengths](histogram.png)
+
+
+
+Furthermore, it is worth analysing that which is the most frequent first letter of words. Below shows the frequency table shows the occurance of each letter.
+
+
+```{r}
+data <- read.delim("first_letter_frequency.tsv")
+knitr::kable(data)
+```
+
+In addition, this is the bar-plot of the frequency of various letters. 
+
+![*Fig 2* A bar plot of first letter occurance](first_letter_freq.png)
+
