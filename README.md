@@ -23,3 +23,21 @@ In this assignment, the R script file [`analyse_Words.R`](https://github.com/STA
 
 *  [frist_letter_frequency.tsv](https://github.com/STAT545-UBC-students/hw09-janehuang1647/blob/master/first_letter_frequency.tsv)
 *  [first_letter_freq.png](https://github.com/STAT545-UBC-students/hw09-janehuang1647/blob/master/first_letter_freq.png)
+
+
+Please check the modified version of `Makefile` here: [`Makefile` file link](https://github.com/STAT545-UBC-students/hw09-janehuang1647/blob/master/Makefile)
+
+## Brief Introduction
+
+In the added R-script, we have extract the data from `words.txt` and count the number of occurance of first letter for individual word. The `Makefile` use  `make` `all: report.html` to generate a frequency table and a bar-plot to show the occurance of each letter, which is shown below. As we can see from the graph, the most frequent first letter is __S__ followed by __P__ and __C__. If you would like to explore more, you can check the original R script: [analyse_Words.R](https://github.com/STAT545-UBC-students/hw09-janehuang1647/blob/master/analyse_Words.R)
+
+
+![](first_letter_freq.png)
+
+
+
+## Reference
+
+*  http://stat545.com/automation04_make-activity.html#appendix
+*  https://bitaesthetics.com/posts/make-for-data-scientists.html
+
